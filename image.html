@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=" ko">
+    <head>
+        <h4>배경이미지</h4>
+    </head>
+    <body>
+        <!-- 배경이미지를 사용하려면 style속성과  CSS background-image속성을 사용하면 됩니다 -->
+        <!-- 전체 페이지의 배경 이미지 추가는 body태그에 사용하면됩니다-->
+        <!-- 배경이미지가 배경보다 작을경우 배경이미지가 반복되어 화면을 채웁니다 -->
+        <!-- 배경이미지가 반복되는 것을 방지하려면 background-repeat: no-repeat; 속성을 추가하면 됩니다 -->
+        <!-- background-size: cover; 속성을 추가하면 배경 이미지가 전체 요소를 덮도록 하려면 속성을 다음으로 설정할 수 있습니다 -->
+        <!-- 전체 요소가 항상 포함되도록 하려면 background-attachment : fixed;
+            속성으로 설정하십시오. 이렇게 하면 배경 이미지가 늘어나지 않고 전체 요소를 덮을 것입니다(이미지는 원래 비율을 유지함).-->
+    <p style="background-image:url('rose.jpg')">장미 입니다</p>
+        
+        <!-- picture요소를 사용하는 이유 
+        1. 대역폭
+        화면이 작거나 기기가 작은 경우 큰 이미지 파일을 로드할 필요가 없습니다.
+        브라우저는 <source> 속성 값이 일치하는 첫 번째 요소를 사용하고 다음 요소를 무시합니다.
+
+        2. 포맷 지원
+        일부 브라우저 또는 장치는 모든 이미지 형식을 지원하지 않을 수 있습니다. 
+        요소 를 사용하여 <picture>모든 형식의 이미지를 추가할 수 있으며 브라우저는 인식하는 첫 번째 형식을 사용하고 다음 요소를 무시합니다
+        -->
+            
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="sunflower.jpg">
+      </picture>
+      
+      
+        <!-- HTML Favicon이란 작은 이미지로 브라우저탭에 제목 옆에 조그만하게 있는 이미지이다. -->
+        <!-- Favicon 예제 코드
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>My Page Title</title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        </head>
+        <body>
+
+            <h1>This is a Heading</h1>
+            <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+        -->
+    </body>
+</html>

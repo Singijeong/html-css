@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h3>table styling</h3>
+        <!-- 테이블 행마다 색을 다른게 하려면 Zevra Stripes 사용-->
+        
+        <style>
+            tr:nth-child(even){
+                background-color:aquamarine;
+            }
+            /* 행 대신에 열의 색을 바꾸고 싶다면 tr대신 th,td를 설정하면됨 */
+            /* tr,td,th를 모두 설정도 가능 */
+          tr {
+              border-bottom: 3px solid #333;
+          }
+          /* 각 행의 아래만 테두리를 그리게하는 스타일 (단. table속성에 border-collapse:collapse; 속성이 있어야지만 테두리가 나타남)  */
+          tr:hover{
+              background-color: red;
+          }
+          /* 커서에 선택된 행만 배경색인 변경되게 하는 설정 */
+          /* tr뿐만 아니라 th,td도 설정가능 */
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;  border-collapse: collapse;">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+            </tr>
+                <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>$150</td>
+             </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td>$250</td>
+            </tr>
+        </table>
+    </body>
+</html>
