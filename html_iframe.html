@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- iframe은  웹페이지내에 웹페이지를 표시하는데 사용됩니다-->
+<html lang="ko">
+
+<head>
+    <h2>HTML IFRAME</h2>
+</head>
+
+<body>
+    <p>기본</p>
+    <iframe src="html_id.html" title="html_id 사용">hello iframe</iframe>
+
+    <p>크기 고정1 w300 h200</p>
+    <iframe src="html_id.html" width="300" height="200" title="html_iframe 크기 고정1"> 크기 고정1</iframe>
+
+    <p>크기 고정2 w300 h200</p>
+    <iframe src="html_id.html" style="width:300px;height:200px" title="html_iframe 크기 고정2"> 크기 고정2</iframe>
+
+    <p>iframe border 삭제</p>
+    <iframe src="html_id.html" style="border:none" title="html_ifrmae border 삭제">border삭제</iframe>
+
+    <p>iframe border 속성 변경</p>
+    <iframe src="html_id.html" style="border:2px solid red" title="html_iframe border 속성 변경">border 변경</iframe>
+
+    <p>iframe 안에 link page 뛰우기</p>
+    <iframe src="html_id.html" name="iframe_name" title="페이지 안에 링크페이지 뛰우기">링크페이지 뛰우기</iframe>
+    <P><a href="image.html" target="iframe_name">image.html </a></P>
+       
+</body>
+
+</html>

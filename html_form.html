@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>HTML form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Submit 버튼을 누르면 action에 있는 url로 데이터 전달 -->
+    <!-- form의 Attributes는 target(_blank,_self,_parent,_top,framename), method(get,post), autocomplete(on,off)-->
+    <form action="/action.php">
+        <label for="fname"> First name: </label><br />
+        <input type="text" id="fname" name="fname" value="John"><br />
+        <label for="lname"> Last name: </label><br />
+        <input type="text" id="lname" name="lname" value="Doe"><br />
+        <input type="submit" value="Submit">
+    </form>
+    <hr />
+    <form action="action.js">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br />
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br />
+
+    </form>
+    <hr />
+    <form action="checkbox_action.js">
+        <input type="checkbox" id="vehicle1" name="vegicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a Car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label><br />
+    </form>
+</body>
+
+</html>
