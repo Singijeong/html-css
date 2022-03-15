@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h3>테이블 만들기</h3>
+    </head>
+    <body>
+        <!-- tr은 행, th은 속성 설정, td는 일반 내용  -->
+        <!-- 단일 테두리를 만들기 위해서 border-collapse: collapse; 라는 속성을 설정하면 됩니다 -->
+        <!-- 테두리가 둥근 모서리를 만들려면 border-radius:10px;처럼 속성을 설정하면 됩니다 -->
+        <!-- 테두리의 모양을 설정하려면 border-style라는 속성을 설정하면 됩니다.-->
+        <!-- dotted, dashed, solid, double, groove, ridge, inset. outset, none, hidden   -->
+        <!-- 테두리의 색을 변경하려면 border-color 속성으로 색을 변경할 수 있습니다-->
+        <!-- 테이블의 크기는 width,height 속성을 %,px 단위로 설정할 수 있습니다 -->
+        <!-- colspan='2'|| rowspan ='2' 같이 속성을 주면 셀 합치기를 할 수 있다 -->
+        <!-- text-align: left; 같이 속성을 주면 셀 내용을 정렬 할 수 있다 -->
+        <!-- <caption>태그를 이용하여 테이블에 캡션을 붙일 수 있다-->
+        <!-- padding 속성은 테두리와 셀 안에 있는 값과의 거리를 지정할 수 있는 속성이다 -->
+        <!-- padding 은 right,left등 원하는 부분만 설정하여 거리를 설정 할 수 있다 -->
+        <!-- border-spacing은 셀과 셀의 거리를 설정할 수 있는 속성이다 -->
+        <table style="border: 3px solid bisque; ">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>addr</th>
+            </tr>
+            <tr>
+                <td>nana</td>
+                <td>12</td>
+                <td>seouk</td>
+            </tr>
+            <tr>
+                <td>mimi</td>
+                <td>23</td>
+                <td>경기</td>
+            </tr>
+        </table>
+    </body>
+</html>

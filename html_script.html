@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h2>HTML Script</h2>
+</head>
+
+<body>
+    <p>getElementById().innerHTML 이용해서 html에 내용 넣기</p>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">눌러주세요</button>
+    <button type="button" onclick="mystyle()">스타일 변신</button>
+    <p id="greet">greet</p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello Javascript";
+        function myFunction(){
+            document.getElementById("greet").innerHTML = "function javascript"
+        }
+        function mystyle(){
+            document.getElementById("greet").style.fontsize = "25px"
+            document.getElementById("greet").style.color = "red"
+            document.getElementById("greet").style.backgroundColor = "yellow"
+        }
+    </script>
+    <!-- 스크립트를 지원하지 않는 브라우저나 사용할 수 없을 경우 noscript로 대체내용을 알려준다-->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+
+</html>
