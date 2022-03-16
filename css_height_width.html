@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <title>css height / width</title>
+        <title>css height, width</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--높이 및 너비 속성은 패딩, 테두리 또는 여백을 포함하지 않습니다! 
+            요소의 패딩, 테두리 및 여백 안쪽 영역의 높이/폭을 설정합니다!  -->
+        
+        <!-- height 나 width 의 값들 -->
+        <!-- 
+            auto - This is default. The browser calculates the height and width
+            length - Defines the height/width in px, cm etc.
+            % - Defines the height/width in percent of the containing block
+            initial - Sets the height/width to its default value
+            inherit - The height/width will be inherited from its parent value  
+         -->
+         <style>
+            div {
+              max-width: 500px;
+              height: 100px;
+              background-color: powderblue;
+            }
+            </style>
     </head>
     <body>
-        
+        <div></div>
     </body>
 </html>

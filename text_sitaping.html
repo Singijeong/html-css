@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=" ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자</title>
+    <style>
+      /* 들여쓰기 */
+      p.a {
+        text-indent: 50px;
+      }
+
+      /* 글자 간격 */
+      p.b {
+        letter-spacing: 20px;
+      }
+
+      /* 줄 간격 */
+      p.c {
+        line-height: 1.6;
+      }
+
+      /* 단어 간격 */
+      p.d {
+        word-spacing: 15px;
+      }
+
+      /* 공백 처리 */
+      /* white-space의 속성 값
+            normal	:    연속된 공백과 줄 바꿈은 메꾸어져서 하나의 공백으로 표시됩니다. 
+                         소스(Source)내의 줄 바꿈 문자도 공백 문자로써 처리됩니다. 필요하다면 긴 줄을 줄바꿈 합니다.
+            nowrap	:    normal과 같이 공백을 채우지만 가로로 긴 줄에서도 줄 바꿈을 하지 않고 표시합니다.
+            pre	    :    연속된 공백을 그대로 표시합니다. 또한 긴 줄도 줄 바꿈하지 않고 표시합니다.
+            pre-wrap:  	 연속 공백은 그대로 유지됩니다. 행(行)의 줄 바꿈은 행의 박스를 채우기 위해 필요한 경우에 실행합니다.
+            pre-line:	 연속 공백은 메꾸어져 하나의 공백이 됩니다. 행의 줄 바꿈은 행의 박스를 메꾸기 위해 필요한 때에 실행됩니다. 
+*/
+      p.e {
+        white-space: nowrap;
+      }
+
+      /* 글자의 그림자 효과주기 */
+      /* 기본문법 : text-shadow: offset-x offset-y blur-radius color | none | initial | inherit */
+      /* 
+        offset-x : 그림자의 수평 거리를 정합니다. (필수)
+        offset-y : 그림자의 수직 거리를 정합니다. (필수)
+        blur-radius : 흐림 정도를 정합니다. (선택 : 값을 정하지 않으면 0)
+        color : 색을 정합니다. (선택 : 값을 정하지 않으면 브라우저 기본값)
+        none : 글림자 효과를 없앱니다.
+        initial : 기본값으로 설정합니다.
+        inherit : 부모 요소의 속성값을 상속받습니다.
+      */
+      h2.f{
+        text-shadow: 0 0 3px #FF0000;
+      }
+      h2.g{
+        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Using text-indent</h4>
+    <p class="a">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </p>
+    <br />
+
+    <h4>Using letter-spacing</h4>
+    <p class="b">This is heading 1</p>
+    <br />
+
+    <h4>Using line-height</h4>
+    <p>
+      This is a paragraph with a standard line-height.<br />
+      The default line height in most browsers is about 110% to 120%.<br />
+    </p>
+
+    <p class="c">
+      This is a paragraph with a smaller line-height.<br />
+      This is a paragraph with a smaller line-height.<br />
+    </p>
+
+    <br />
+    <h4>Using word-spacing</h4>
+
+    <p>This is a paragraph with normal word spacing.</p>
+
+    <p class="d">This is a paragraph with larger word spacing.</p>
+    <br />
+    <br />
+    <h1>Using white-space</h1>
+
+    <p>
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap. 
+      This is some text that will not wrap.
+    </p>
+
+    <p>Try to remove the white-space property to see the difference!</p>
+    <br>
+    <br>
+    <h2 class="f">Text-shadow with red neon glow!</h2>
+    <h2 class="g">Text-shadow with red and blue neon glow!</h2>
+  </body>
+</html>

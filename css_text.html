@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>css text</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+        /* text 정렬 */
+      h1 {
+        text-align: justify;  /* 양쪽 맟춤 정렬*/
+      }
+      /*text-align-last 마지막 줄만 정렬*/
+      p.a {
+        text-align-last: right; 
+      }
+      p.b {
+        text-align-last: left;
+      }
+      p.c {
+        text-align-last: justify;
+      }
+
+      /* text 줄긋기 */
+      p.d {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+p.e {
+  text-decoration-line: line-through;
+  text-decoration-color:aqua
+}
+
+p.f {
+  text-decoration-line: underline;
+  text-decoration-color:tomato
+}
+
+p.g {
+  text-decoration-line: overline underline;
+  text-decoration-color:violet
+}
+
+/* text 대소문자 변환 */
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+    </style>
+  </head>
+  <body>
+    <h1>The text-align-last Property</h1>
+
+    <h2>text-align-last: right:</h2>
+    <p class="a">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus
+      diam, consequat gravida libero rhoncus ut.
+    </p>
+
+    <h2>text-align-last: center:</h2>
+    <p class="b">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus
+      diam, consequat gravida libero rhoncus ut.
+    </p>
+
+    <h2>text-align-last: justify:</h2>
+    <p class="c">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam
+      at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus
+      diam, consequat gravida libero rhoncus ut.
+    </p>
+
+    <br/>
+<p>줄 긋기</p>
+<p class="d">Overline text decoration</h1>
+<p class="e">Line-through text decoration</h2>
+<p class="f">Underline text decoration</h3>
+<p class="g">Overline and underline text decoration.</p>
+
+<p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses 
+the reader.</p>
+<br>
+<p>대소문자로 변경</p>
+<p class="uppercase">This text is transformed to uppercase.</p>
+<p class="lowercase">This text is transformed to lowercase.</p>
+<p class="capitalize">This text is capitali
+  </body>
+</html>
