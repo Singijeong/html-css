@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p.dotted {
+        border-style: dotted;
+      }
+      p.dashed {
+        border-style: dashed;
+      }
+      p.solid {
+        border-style: solid;
+      }
+      p.double {
+        border-style: double;
+      }
+      p.groove {
+        border-style: groove;
+      }
+      p.ridge {
+        border-style: ridge;
+      }
+      p.inset {
+        border-style: inset;
+      }
+      p.outset {
+        border-style: outset;
+      }
+      p.none {
+        border-style: none;
+      }
+      p.hidden {
+        border-style: hidden;
+      }
+      p.mix {
+        border-style: dotted dashed solid double;
+      }
+      p.one {
+        border-style: solid;
+        border-width: 5px;
+      }
+
+      p.two {
+        border-style: solid;
+        border-width: medium;
+      }
+
+      p.three {
+        border-style: dotted;
+        border-width: 2px;
+      }
+
+      p.four {
+        border-style: dotted;
+        border-width: thick;
+      }
+
+      /* width 축약 설정 top시부터 시계방향으로 width설정이 가능 border color 설정도 시계방향임 */
+      p.sone {
+        border-style: solid;
+        border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+      }
+
+      p.stwo {
+        border-style: solid;
+        border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+      }
+
+      p.sthree {
+        border-style: solid;
+        border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+      }
+
+      /* border style도 따로따로 설정 가능함 */
+      body {
+        text-align: center;
+      }
+      /* Four values */
+      p.bsfour {
+        border-style: dotted solid double dashed;
+      }
+
+      /* Three values */
+      p.bsthree {
+        border-style: dotted solid double;
+      }
+
+      /* Two values */
+      p.bstwo {
+        border-style: dotted solid;
+      }
+
+      /* One value */
+      p.bsone {
+        border-style: dotted;
+      }
+
+      /* css border 축약 */
+      /*    
+            border 축약은 3가지 속성에 대해서 가능함
+            border-width
+            border-style (required)
+            border-color 
+      */
+
+      /* 둥그런 테두리 속성*/
+      /* border-radius : 5px */
+      
+    </style>
+  </head>
+  <body>
+    <h2>The border-style Property</h2>
+    <p>This property specifies what kind of border to display:</p>
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <br />
+    <p>여기 부터는 border width 관련</p>
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <br />
+    <p>여기 부터는 border width 축약 설정</p>
+    <p class="sone">Some text.</p>
+    <p class="stwo">Some text.</p>
+    <p class="sthree">Some text.</p>
+
+    <br />
+    <p>여기 부터는 border side 다중설정</p>
+    <p class="bsfour">4 different border styles.</p>
+    <p class="bsthree">3 different border styles.</p>
+    <p class="bstwo">2 different border styles.</p>
+    <p class="bsone">1 border style.</p>
+  </body>
+</html>
+
+<!-- border: 0 vs. border: none -->
+<!-- 
+1.  border-style: hidden; 은 충돌하는 다른 모든 보더보다 우선순위가 높다.
+
+2.  border-style: none; 은 가장 낮은 우선순위를 갖는다. 이 가장자리에서 만나는 모든 요소의 
+    보더 속성이 none인 경우에만 보더가 숨겨진다. 
+    (하지만 border-style의 디폴트값이 none 이긴 함)
+
+3.  어느 것도 border-style: hidden; 이 아니고, 그중 적어도 하나가 border-style: none이
+    아니라면 더 두꺼운 보더를 사용하게 된다. 만약 여러 개가 동일한 border-width 를 갖는다면 
+    double - solid - dashed - dotted - ridge - outset - groove - inset 순으로 우선순위가 낮아진다.
+
+ 4. 테두리 스타일 중 border-color만 다른 경우, 
+    셀에 설정된 스타일이 row, row group, column, column group, table 동일한 유형의 두 요소가 
+    충돌하면 좌측(테이블 방향을 오른쪽으로 지정했다면 우측) 상단의 요소가 우선시 된다. -->

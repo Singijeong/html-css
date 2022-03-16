@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>css_margin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p{
+                margin: 70px;
+                border: 1px solid green;
+
+                /*  margin 속성 */
+                /* 
+                     margin-top
+                    margin-right
+                    margin-bottom
+                    margin-left 
+                */
+                
+                /* margin 속성 값들 */
+                /* 
+                    auto - the browser calculates the margin
+                    length - specifies a margin in px, pt, cm, etc.
+                    % - specifies a margin in % of the width of the containing element
+                    inherit - specifies that the margin should be inherited from the parent element
+                */
+
+                /* margin 속성 축약은 다른 속성들과 비슷하세 top right bottom left 순서로 된다 */
+                /* inherit 속성 값은 div 같은 경우 div의 margin을 따라간다 */
+                
+                
+                /* Margin Collapse */
+                /* 
+                    요소의 상단 및 하단 여백이 하나의 여백으로 축소되는 경우가 있습니다. 
+                    두 개의 여백 중 가장 큰 여백과 동일한 여백. 이것은 좌우 여백에 발생하지 않습니다! 상하 여백만!
+                    위의 예에서는 요소의 하단 여백은 50px이고 요소의 상단 여백은 20px로 설정됩니다. 
+                    상식적으로 볼 때 사이의 수직 마진은 는 합계 70px(50px + 20px)가 됩니다.
+                    하지만 Margin Collapse로 인해 실제 마진은 50px가 됩니다. 
+                */
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>This element has a margin of 70px</p>
+    </body>
+</html>
